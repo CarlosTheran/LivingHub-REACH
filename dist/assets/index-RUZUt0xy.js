@@ -1,4 +1,4 @@
-(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const s of e)if(s.type==="childList")for(const r of s.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&o(r)}).observe(document,{childList:!0,subtree:!0});function n(e){const s={};return e.integrity&&(s.integrity=e.integrity),e.referrerPolicy&&(s.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?s.credentials="include":e.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function o(e){if(e.ep)return;e.ep=!0;const s=n(e);fetch(e.href,s)}})();const c=[{id:"workstream-1",label:" workstream 1 ",title:"Community Consultation & Topic Prioritization",owner:"Operations Office",status:"On track",progress:78,overview:"Employ empirical research methods to engage with community members and identify culturally significant aspects and sensitive topics, establishing a foundation for ethical AI development and data practices.",updates:["Governance notes were consolidated into a single operating brief.","Weekly decision log template was approved for all coordinators.","Escalation criteria were aligned with leadership review cycles."],previousSteps:["Reviewed current intake process and identified approval bottlenecks.","Mapped roles across contributors, reviewers, and approvers.","Drafted the first version of the operating charter."],nextSteps:["Finalize the approval matrix with legal and finance stakeholders.","Publish the intake checklist to the shared document library.","Schedule a quarterly governance review checkpoint."],documents:[{name:"Governance Charter",filename:"governance-charter.md",content:`# Governance Charter
+(function(){const i=document.createElement("link").relList;if(i&&i.supports&&i.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const s of e)if(s.type==="childList")for(const r of s.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&o(r)}).observe(document,{childList:!0,subtree:!0});function n(e){const s={};return e.integrity&&(s.integrity=e.integrity),e.referrerPolicy&&(s.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?s.credentials="include":e.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function o(e){if(e.ep)return;e.ep=!0;const s=n(e);fetch(e.href,s)}})();const c=[{id:"workstream-1",label:" Workstream 1 ",title:"Community Consultation & Topic Prioritization",owner:"Operations Office",status:"On track",progress:78,overview:"Employ empirical research methods to engage with community members and identify culturally significant aspects and sensitive topics, establishing a foundation for ethical AI development and data practices.",updates:["Governance notes were consolidated into a single operating brief.","Weekly decision log template was approved for all coordinators.","Escalation criteria were aligned with leadership review cycles."],previousSteps:["Reviewed current intake process and identified approval bottlenecks.","Mapped roles across contributors, reviewers, and approvers.","Drafted the first version of the operating charter."],nextSteps:["Finalize the approval matrix with legal and finance stakeholders.","Publish the intake checklist to the shared document library.","Schedule a quarterly governance review checkpoint."],documents:[{name:"Governance Charter",filename:"governance-charter.md",content:`# Governance Charter
 
 - Scope: intake and oversight
 - Cadence: weekly review
@@ -7,7 +7,7 @@
 
 | Date | Decision | Owner | Follow-up |
 | --- | --- | --- | --- |
-`}]},{id:"workstream-2",label:"   workstream 2    ",title:"Data Collection and Curation",owner:"Analytics Team",status:"In review",progress:64,overview:"Identify appropriate data collection methods and tools across GR and institutions to enable effective community engagement in order to curate multimodal datasets that are appropriately annotated to highlight cultural aspects and sensitive topics relevant to communities engaged.",updates:["Core data dictionary is now aligned to the latest business terminology.","Three high-priority quality checks were added to the validation backlog.","Reporting owners confirmed the canonical source for monthly metrics."],previousSteps:["Audited upstream sources and identified gaps in field consistency.","Documented the current reporting stack and access patterns.","Proposed a standard data certification workflow."],nextSteps:["Complete the sampling review for the highest-risk datasets.","Publish a draft data certification checklist.","Confirm the refresh schedule for executive dashboards."],documents:[{name:"Data Dictionary",filename:"data-dictionary.md",content:`# Data Dictionary
+`}]},{id:"workstream-2",label:"   Workstream 2    ",title:"Data Collection and Curation",owner:"Analytics Team",status:"In review",progress:64,overview:"Identify appropriate data collection methods and tools across GR and institutions to enable effective community engagement in order to curate multimodal datasets that are appropriately annotated to highlight cultural aspects and sensitive topics relevant to communities engaged.",updates:["Core data dictionary is now aligned to the latest business terminology.","Three high-priority quality checks were added to the validation backlog.","Reporting owners confirmed the canonical source for monthly metrics."],previousSteps:["Audited upstream sources and identified gaps in field consistency.","Documented the current reporting stack and access patterns.","Proposed a standard data certification workflow."],nextSteps:["Complete the sampling review for the highest-risk datasets.","Publish a draft data certification checklist.","Confirm the refresh schedule for executive dashboards."],documents:[{name:"Data Dictionary",filename:"data-dictionary.md",content:`# Data Dictionary
 
 - Metric definitions
 - Source ownership
@@ -166,6 +166,7 @@ training gaps,Support Lead,medium,planned
       <nav class="top-nav" aria-label="Work stream navigation">
         <a class="nav-link" href="#dashboard">Dashboard</a>
         ${i}
+        <a class="nav-link" href="#student-projects">Student Projects</a>
         <a class="nav-link" href="#shared-resources">Shared resources</a>
       </nav>
 
@@ -202,6 +203,29 @@ training gaps,Support Lead,medium,planned
           <div class="summary-grid">${n}</div>
         </section>
 
+        <section class="student-projects" id="student-projects">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Student Work</p>
+              <h2>Student Projects</h2>
+            </div>
+            <p class="section-summary">A lightweight showcase area for student submissions, in-progress work, and final deliverables.</p>
+          </div>
+
+          <div class="summary-grid student-project-grid">
+            <article class="stream-summary-card">
+              <h3>Open for submissions</h3>
+              <p>Students can submit project ideas and initial artifacts for review.</p>
+              <p><a class="text-link" href="#">Submit project</a></p>
+            </article>
+
+            <article class="stream-summary-card">
+              <h3>In progress</h3>
+              <p>Active projects, mentorship notes, and milestone tracking.</p>
+              <p><a class="text-link" href="#">View projects</a></p>
+            </article>
+          </div>
+
         ${o}
 
         <section class="shared-resources" id="shared-resources">
@@ -229,6 +253,33 @@ training gaps,Support Lead,medium,planned
             </article>
           </div>
         </section>
+        
+        
+
+        <section class="integrations" id="integrations">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Integrations</p>
+              <h2>Calendar & Drive</h2>
+            </div>
+            <p class="section-summary">Embedded Google Calendar and Google Drive folder for shared scheduling and files. Replace the placeholder IDs with your public calendar and folder IDs.</p>
+          </div>
+
+          <div class="resources-layout">
+            <article class="content-card">
+              <h3>Team Calendar</h3>
+              <!-- Replace CALENDAR_ID with your Google Calendar ID -->
+              <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=UTC&title=Google%20Workstream%20Calendar&showTz=0&showTitle=0&showCalendars=0&src=MDk3ZDk0NjhkY2Y4ZjAwNDE1NWQ1NzdmMjllYTQ4YzdkODE0YTc1YWFhOTkxOWNiNWJjNGIzYjIzODY5ZGJmY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23ad1457&color=%230b8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </article>
+
+            <article class="content-card">
+              <h3>Shared Drive Folder</h3>
+              <!-- Replace FOLDER_ID with your Google Drive folder ID and make folder public -->
+              <iframe src="https://drive.google.com/embeddedfolderview?id=FOLDER_ID#grid" width="100%" height="400" frameborder="0"></iframe>
+            </article>
+          </div>
+        </section>
+
       </main>
     </div>
   `}function l(t){return t.toLowerCase().replace(/[^a-z0-9]+/g,"-")}function u(t){return URL.createObjectURL(new Blob([t],{type:"text/markdown"}))}function v(t){return[18,32,46,58,72,84,96].map(n=>`<span style="height: ${Math.min(100,Math.max(28,t>=n?n:n-24))}%"></span>`).join("")}const g=document.querySelector("#app");m(g);
